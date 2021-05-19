@@ -4,7 +4,7 @@
  */
 public abstract class Cliente {
 
-    private String nombre;
+    private String nombre = null;
 
     public Cliente(String nombre) {
         this.nombre = nombre;

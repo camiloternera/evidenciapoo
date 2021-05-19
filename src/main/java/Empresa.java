@@ -8,19 +8,21 @@
  *
  * @author camilo
  */
-public class Empresa extends Cliente {
+public class Empresa extends Persona {
     
     private String nit;
     private String representante;
 
     public Empresa (String nit, String nombre, String representante) {
-        super(nombre);
+        
         this.nit = nit;
         this.representante = representante;
     }
 
-    public String obtenederIdentificacion () {
-        
+    @Override
+    public String obtenerIdentificacion() {
+        // TODO Auto-generated method stub
+        return super.obtenerIdentificacion();
     }
 
     public String obtenerRepresentante () {
