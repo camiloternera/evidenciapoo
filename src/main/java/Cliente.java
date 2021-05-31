@@ -1,15 +1,15 @@
 /**
  *
- * @author camilo
+ * @author Camilo
  */
-public abstract class Cliente {
+public abstract class Cliente extends Banco {
 
-    private String nombre = null;
+    private String nombre;
 
     public Cliente(String nombre) {
-        this.nombre = nombre;
+        super(nombre);
     }
-    
+
     public String obtenerNombre() {
         return nombre;
     }
@@ -23,5 +23,4 @@ public abstract class Cliente {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
 }

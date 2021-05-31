@@ -2,18 +2,18 @@
  *
  * @author camilo
  */
-public class Banco extends Cliente {
+public class Banco {
     
     private String nombre;
     private Cliente cliente[];
     private int numeroDeCliente;
-    //Persona p = new Persona(p.getCedula(), p.getCedula(), p.getEdad());
+    //Persona p = new Persona(p.getCedula(), p.getNombre(), p.getEdad());
 
     public Banco(String nombre) {
-        super(nombre);
+        this.nombre = nombre;
     }
     
-    @Override
+    // @Override
     public String obtenerNombre(){
         return nombre;
     }
@@ -25,21 +25,33 @@ public class Banco extends Cliente {
         
     }
     
-    public int obtenerNumeroCliente(int posicion){
+    public int obtenerNumeroCliente(){
+        
         return numeroDeCliente;
     }
     
     public Cliente obtenerCliente(int posicion) {
         return cliente[posicion];
     }
+
     public Cliente[] obtClientes(){
-
+        return this.cliente;
     }
 
-    @Override
-    public String obtenerIdentificacion() {
-        // TODO Auto-generated method stub
-        return null;
+    public Cliente[] getCliente() {
+        return cliente;
     }
+
+    public void setCliente(Cliente[] cliente) {
+        this.cliente = cliente;
+    }
+
+    public int getNumeroDeCliente() {
+        return numeroDeCliente;
+    }
+
+    public void setNumeroDeCliente(int numeroDeCliente) {
+        this.numeroDeCliente = numeroDeCliente;
+    }    
 
 }

@@ -4,8 +4,8 @@
  */
 public class Persona extends Cliente {
 
-    private String cedula = null;
-    private int edad = 0;
+    private String cedula;
+    private int edad;
 
     public Persona (String cedula, String nombre, int edad) {
         super(nombre);
