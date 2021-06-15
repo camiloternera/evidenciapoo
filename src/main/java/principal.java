@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 /**
  *
  * @author camilo
@@ -9,8 +12,12 @@ public class principal {
      */
     public static void main(String[] args) {
         
-        System.out.println("Funciona cv");
+        /* Intanciar Banco */
+        Banco bank = new Banco("Bank International CT Developer");
         
+        
+        // Personas
+        ArrayList<Persona> listPeoples = new ArrayList();
     }
     
 }

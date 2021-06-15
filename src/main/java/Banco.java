@@ -6,14 +6,13 @@ public class Banco {
     
     private String nombre;
     private Cliente cliente[];
-    private int numeroDeCliente;
+    private int numerosCliente;
     //Persona p = new Persona(p.getCedula(), p.getNombre(), p.getEdad());
 
     public Banco(String nombre) {
         this.nombre = nombre;
     }
     
-    // @Override
     public String obtenerNombre(){
         return nombre;
     }
@@ -21,13 +20,14 @@ public class Banco {
     public void cambiarNombre(String nombre) {
         this.nombre = nombre;
     }
+    
     public void addCliente(Cliente clie) {
         
     }
     
     public int obtenerNumeroCliente(){
         
-        return numeroDeCliente;
+        return numerosCliente;
     }
     
     public Cliente obtenerCliente(int posicion) {
@@ -46,12 +46,22 @@ public class Banco {
         this.cliente = cliente;
     }
 
-    public int getNumeroDeCliente() {
-        return numeroDeCliente;
+    public int getNumerosCliente() {
+        return numerosCliente;
     }
 
-    public void setNumeroDeCliente(int numeroDeCliente) {
-        this.numeroDeCliente = numeroDeCliente;
-    }    
+    public void setNumerosCliente(int numerosCliente) {
+        this.numerosCliente = numerosCliente;
+    }
+
+    /** Getter and Setter */
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
 
 }

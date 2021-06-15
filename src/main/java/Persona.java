@@ -26,6 +26,8 @@ public class Persona extends Cliente {
 
     }
 
+    
+    /** Getter and Setter */
     public String getCedula() {
         return cedula;
     }
